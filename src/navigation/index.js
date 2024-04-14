@@ -11,7 +11,8 @@ export default function Navigation() {
   return (
     <Stack.Navigator>
       <Stack.Group screenOptions={{headerShown:false}}>
-        <Stack.Screen name='AuthStack' component={AuthStack}/>
+        {/* <Stack.Screen name='AuthStack' component={AuthStack}/> */}
+        <Stack.Screen name='MainStack' component={MainStack}/>
       </Stack.Group>
     </Stack.Navigator>
   )
