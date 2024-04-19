@@ -5,6 +5,7 @@ import { useFonts } from "@expo-google-fonts/montserrat";
 import React from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { BottomSheetModalProvider } from "@gorhom/bottom-sheet";
+import { StatusBar } from "expo-status-bar";
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -16,6 +17,7 @@ export default function App() {
       <BottomSheetModalProvider>
         <NavigationContainer>
           <Navigation />
+          <StatusBar style="dark" />
         </NavigationContainer>
       </BottomSheetModalProvider>
     </GestureHandlerRootView>
